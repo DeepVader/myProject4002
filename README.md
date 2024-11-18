@@ -1,3 +1,3 @@
-# myProject4002
+# Membership Management System
 
 first step run setting.py
