@@ -1,0 +1,402 @@
+Customer ID,CustomerName,State,City
+C-101,Bharat,Gujarat,Ahmedabad
+C-102,Pearl,Maharashtra,Pune
+C-103,Jahan,Madhya Pradesh,Bhopal
+C-104,Divsha,Rajasthan,Jaipur
+C-105,Kasheen,West Bengal,Kolkata
+C-106,Hazel,Karnataka,Bangalore
+C-107,Sonakshi,Jammu and Kashmir,Kashmir
+C-108,Aarushi,Tamil Nadu,Chennai
+C-109,Jitesh,Uttar Pradesh,Lucknow
+C-110,Yogesh,Bihar,Patna
+C-111,Anita,Kerala ,Thiruvananthapuram
+C-112,Shrichand,Punjab,Chandigarh
+C-113,Mukesh,Haryana,Chandigarh
+C-114,Vandana,Himachal Pradesh,Simla
+C-115,Bhavna,Sikkim,Gangtok
+C-116,Kanak,Goa,Goa
+C-117,Sagar,Nagaland,Kohima
+C-118,Manju,Andhra Pradesh,Hyderabad
+C-119,Ramesh,Gujarat,Ahmedabad
+C-120,Sarita,Maharashtra,Pune
+C-121,Deepak,Madhya Pradesh,Bhopal
+C-122,Monisha,Rajasthan,Jaipur
+C-123,Atharv,West Bengal,Kolkata
+C-124,Vini,Karnataka,Bangalore
+C-125,Pinky,Jammu and Kashmir,Kashmir
+C-126,Bhishm,Maharashtra,Mumbai
+C-127,Hitika,Madhya Pradesh,Indore
+C-128,Pooja,Bihar,Patna
+C-129,Hemant,Kerala ,Thiruvananthapuram
+C-130,Sahil,Punjab,Chandigarh
+C-131,Ritu,Haryana,Chandigarh
+C-132,Manish,Himachal Pradesh,Simla
+C-133,Amit,Sikkim,Gangtok
+C-134,Sanjay,Goa,Goa
+C-135,Nidhi,Nagaland,Kohima
+C-136,Nishi,Maharashtra,Mumbai
+C-137,Ashmi,Madhya Pradesh,Indore
+C-138,Parth,Maharashtra,Pune
+C-139,Lisha,Madhya Pradesh,Bhopal
+C-140,Paridhi,Rajasthan,Jaipur
+C-141,Parishi,West Bengal,Kolkata
+C-142,Ajay,Karnataka,Bangalore
+C-143,Kirti,Jammu and Kashmir,Kashmir
+C-144,Mayank,Maharashtra,Mumbai
+C-145,Yaanvi,Madhya Pradesh,Indore
+C-146,Sonal,Bihar,Patna
+C-147,Sharda,Kerala ,Thiruvananthapuram
+C-148,Aditya,Punjab,Chandigarh
+C-149,Rachna,Haryana,Chandigarh
+C-150,Chirag,Maharashtra,Mumbai
+C-151,Anurag,Madhya Pradesh,Indore
+C-152,Tushina,Goa,Goa
+C-153,Farah,Nagaland,Kohima
+C-154,Sabah,Maharashtra,Mumbai
+C-155,Nida,Madhya Pradesh,Indore
+C-156,Priyanka,Maharashtra,Pune
+C-157,Tulika,Madhya Pradesh,Bhopal
+C-158,Shefali,Rajasthan,Jaipur
+C-159,Sanskriti,West Bengal,Kolkata
+C-160,Shruti,Karnataka,Bangalore
+C-161,Subhashree,Jammu and Kashmir,Kashmir
+C-162,Sweta,Maharashtra,Mumbai
+C-163,Pournamasi,Madhya Pradesh,Indore
+C-164,Pratyusmita,Bihar,Patna
+C-165,Chayanika,Kerala ,Thiruvananthapuram
+C-166,Tanvi,Punjab,Chandigarh
+C-167,Anjali,Haryana,Chandigarh
+C-168,Rhea,Himachal Pradesh,Simla
+C-169,Piyali,Sikkim,Gangtok
+C-170,Charika,Goa,Goa
+C-171,Mitali,Nagaland,Kohima
+C-172,Akanksha,Andhra Pradesh,Hyderabad
+C-173,Arsheen,Gujarat,Ahmedabad
+C-174,Mahima,Maharashtra,Pune
+C-175,Shreya,Madhya Pradesh,Bhopal
+C-176,Chandni,Rajasthan,Jaipur
+C-177,Ekta,West Bengal,Kolkata
+C-178,Bathina,Karnataka,Bangalore
+C-179,Avni,Maharashtra,Mumbai
+C-180,Aayushi,Madhya Pradesh,Indore
+C-181,Bhawna,Madhya Pradesh,Indore
+C-182,Krutika,Bihar,Patna
+C-175,Shreya,Kerala ,Thiruvananthapuram
+C-183,Samiksha,Maharashtra,Mumbai
+C-184,Sheetal,Madhya Pradesh,Indore
+C-128,Pooja,Himachal Pradesh,Simla
+C-185,Sanjna,Maharashtra,Mumbai
+C-186,Swetha,Madhya Pradesh,Indore
+C-187,Bhaggyasree,Maharashtra,Mumbai
+C-188,Gunjan,Madhya Pradesh,Indore
+C-189,Akancha,Maharashtra,Mumbai
+C-190,Rashmi,Madhya Pradesh,Indore
+C-191,Parna,Madhya Pradesh,Bhopal
+C-192,Subhasmita,Rajasthan,Jaipur
+C-193,Suhani,West Bengal,Kolkata
+C-194,Noopur,Karnataka,Bangalore
+C-195,Vijay,Jammu and Kashmir,Kashmir
+C-196,Amisha,Tamil Nadu,Chennai
+C-197,Kritika,Uttar Pradesh,Lucknow
+C-198,Shubhi,Maharashtra,Mumbai
+C-199,Maithilee,Madhya Pradesh,Indore
+C-200,Shaily,Maharashtra,Mumbai
+C-177,Ekta,Madhya Pradesh,Indore
+C-201,Riya,Maharashtra,Mumbai
+C-202,Shweta,Madhya Pradesh,Indore
+C-203,Swetlana,Goa,Goa
+C-204,Shivani,Maharashtra,Mumbai
+C-205,Kishwar,Madhya Pradesh,Indore
+C-206,Aakanksha,Madhya Pradesh,Indore
+C-207,Megha,Maharashtra,Pune
+C-208,Sakshi,Madhya Pradesh,Bhopal
+C-209,Adhvaita,Rajasthan,Jaipur
+C-210,Raksha,West Bengal,Kolkata
+C-211,Stuti,Karnataka,Bangalore
+C-212,Srishti,Jammu and Kashmir,Kashmir
+C-213,Surabhi,Tamil Nadu,Chennai
+C-214,Manshul,Uttar Pradesh,Lucknow
+C-167,Anjali,Maharashtra,Mumbai
+C-215,Namrata,Punjab,Chandigarh
+C-216,Anchal,Haryana,Chandigarh
+C-217,Inderpreet,Himachal Pradesh,Simla
+C-218,Wale,Maharashtra,Mumbai
+C-219,Anisha,Nagaland,Kohima
+C-220,Kiran,Maharashtra,Mumbai
+C-221,Turumella,Madhya Pradesh,Indore
+C-222,Ameesha,Maharashtra,Pune
+C-223,Madhulika,Madhya Pradesh,Bhopal
+C-224,Rishabh,Rajasthan,Jaipur
+C-225,Akash,West Bengal,Kolkata
+C-226,Anubhaw,Karnataka,Bangalore
+C-227,Dhirajendu,Maharashtra,Mumbai
+C-228,Pranav,Madhya Pradesh,Indore
+C-229,Arindam,Uttar Pradesh,Lucknow
+C-230,Akshat,Maharashtra,Mumbai
+C-231,Shubham,Madhya Pradesh,Indore
+C-232,Ayush,Punjab,Chandigarh
+C-233,Daksh,Haryana,Chandigarh
+C-234,Rane,Maharashtra,Mumbai
+C-235,Navdeep,Madhya Pradesh,Indore
+C-236,Ashwin,Goa,Goa
+C-237,Aman,Nagaland,Kohima
+C-238,Devendra,Andhra Pradesh,Hyderabad
+C-239,Kartik,Gujarat,Ahmedabad
+C-240,Shivam,Maharashtra,Pune
+C-241,Harsh,Madhya Pradesh,Bhopal
+C-242,Nitant,Rajasthan,Jaipur
+C-232,Ayush,Maharashtra,Mumbai
+C-243,Priyanshu,Madhya Pradesh,Indore
+C-244,Nishant,Maharashtra,Mumbai
+C-245,Vaibhav,Madhya Pradesh,Indore
+C-240,Shivam,Uttar Pradesh,Lucknow
+C-246,Akshay,Bihar,Patna
+C-247,Shourya,Kerala ,Thiruvananthapuram
+C-248,Mohan,Maharashtra,Mumbai
+C-249,Mohit,Madhya Pradesh,Indore
+C-231,Shubham,Himachal Pradesh,Simla
+C-250,Soumya,Sikkim,Gangtok
+C-128,Pooja,Goa,Goa
+C-213,Surabhi,Maharashtra,Mumbai
+C-251,Anudeep,Madhya Pradesh,Indore
+C-252,Noshiba,Gujarat,Ahmedabad
+C-253,Sanjova,Maharashtra,Pune
+C-254,Meghana,Madhya Pradesh,Bhopal
+C-213,Surabhi,Rajasthan,Jaipur
+C-255,Ashmeet,West Bengal,Kolkata
+C-256,Shreyoshe,Karnataka,Bangalore
+C-257,Surbhi,Maharashtra,Mumbai
+C-208,Sakshi,Madhya Pradesh,Indore
+C-258,Vaibhavi,Uttar Pradesh,Lucknow
+C-259,Sanjana,Bihar,Patna
+C-260,Snehal,Punjab,Chandigarh
+C-261,Duhita,Haryana,Chandigarh
+C-262,Mousam,Maharashtra,Mumbai
+C-263,Aditi,Madhya Pradesh,Indore
+C-264,Savi,Madhya Pradesh,Indore
+C-265,Teena,Andhra Pradesh,Hyderabad
+C-266,Rutuja,Gujarat,Ahmedabad
+C-180,Aayushi,Maharashtra,Mumbai
+C-267,Shivangi,Madhya Pradesh,Indore
+C-268,Rohit,Rajasthan,Jaipur
+C-232,Ayush,West Bengal,Kolkata
+C-269,Abhishek,Karnataka,Bangalore
+C-270,Asish,Jammu and Kashmir,Kashmir
+C-271,Dinesh,Tamil Nadu,Chennai
+C-246,Akshay,Uttar Pradesh,Lucknow
+C-272,Sajal,Bihar,Patna
+C-273,Avish,Kerala ,Thiruvananthapuram
+C-269,Abhishek,Maharashtra,Mumbai
+C-274,Siddharth,Madhya Pradesh,Indore
+C-148,Aditya,Himachal Pradesh,Simla
+C-275,Sukant,Sikkim,Gangtok
+C-276,Sukrith,Maharashtra,Mumbai
+C-277,Sauptik,Madhya Pradesh,Indore
+C-278,Shishu,Andhra Pradesh,Hyderabad
+C-279,Divyansh,Gujarat,Ahmedabad
+C-280,Ishit,Maharashtra,Pune
+C-281,Aryan,Madhya Pradesh,Bhopal
+C-282,Yash,Maharashtra,Mumbai
+C-283,Shivanshu,Madhya Pradesh,Indore
+C-284,Sudheer,Karnataka,Bangalore
+C-285,Ankit,Maharashtra,Mumbai
+C-286,Dhanraj,Madhya Pradesh,Indore
+C-287,Vipul,Uttar Pradesh,Lucknow
+C-288,Apsingekar,Bihar,Patna
+C-289,Suman,Kerala ,Thiruvananthapuram
+C-290,Nripraj,Punjab,Chandigarh
+C-291,Utsav,Maharashtra,Mumbai
+C-292,Kshitij,Madhya Pradesh,Indore
+C-293,Hrisheekesh,Maharashtra,Mumbai
+C-294,Swapnil,Madhya Pradesh,Indore
+C-241,Harsh,Nagaland,Kohima
+C-295,Mane,Andhra Pradesh,Hyderabad
+C-296,Praneet,Maharashtra,Mumbai
+C-297,Sandeep,Madhya Pradesh,Indore
+C-298,Ankur,Madhya Pradesh,Bhopal
+C-299,Dheeraj,Rajasthan,Jaipur
+C-142,Ajay,West Bengal,Kolkata
+C-300,Tejas,Karnataka,Bangalore
+C-301,Rohan,Maharashtra,Mumbai
+C-302,Shyam,Madhya Pradesh,Indore
+C-239,Kartik,Madhya Pradesh,Indore
+C-303,Tanushree,Maharashtra,Mumbai
+C-304,Nikita,Punjab,Chandigarh
+C-305,Apoorva,Haryana,Chandigarh
+C-306,Aastha,Himachal Pradesh,Simla
+C-174,Mahima,Sikkim,Gangtok
+C-307,Harshita,Maharashtra,Mumbai
+C-308,Krishna,Madhya Pradesh,Indore
+C-309,Ananya,Andhra Pradesh,Hyderabad
+C-310,Moumita,Gujarat,Ahmedabad
+C-311,Arti,Maharashtra,Pune
+C-312,Palak,Maharashtra,Mumbai
+C-259,Sanjana,Madhya Pradesh,Indore
+C-313,Pranjali,West Bengal,Kolkata
+C-314,Sneha,Karnataka,Bangalore
+C-315,Ashvini,Maharashtra,Mumbai
+C-316,Mrunal,Maharashtra,Mumbai
+C-317,Swati,Madhya Pradesh,Indore
+C-318,Snel,Kerala ,Thiruvananthapuram
+C-319,Soodesh,Punjab,Chandigarh
+C-320,Aniket,Haryana,Chandigarh
+C-301,Rohan,Himachal Pradesh,Simla
+C-321,K,Sikkim,Gangtok
+C-269,Abhishek,Goa,Goa
+C-322,Kushal,Nagaland,Kohima
+C-323,Soumyabrata,Andhra Pradesh,Hyderabad
+C-324,Gaurav,Gujarat,Ahmedabad
+C-231,Shubham,Maharashtra,Pune
+C-325,Abhijeet,Madhya Pradesh,Bhopal
+C-325,Abhijeet,Maharashtra,Mumbai
+C-326,Anand,Madhya Pradesh,Indore
+C-294,Swapnil,Maharashtra,Mumbai
+C-327,Chikku,Madhya Pradesh,Indore
+C-246,Akshay,Tamil Nadu,Chennai
+C-328,Aayush,Uttar Pradesh,Lucknow
+C-329,Amol,Bihar,Patna
+C-330,Manibalan,Kerala ,Thiruvananthapuram
+C-331,Aromal,Maharashtra,Mumbai
+C-332,Arun,Madhya Pradesh,Indore
+C-333,Komal,Himachal Pradesh,Simla
+C-285,Ankit,Sikkim,Gangtok
+C-334,Vikash,Goa,Goa
+C-335,Parakh,Nagaland,Kohima
+C-228,Pranav,Andhra Pradesh,Hyderabad
+C-336,Gunjal,Gujarat,Surat
+C-337,Saurabh,Maharashtra,Mumbai
+C-338,Divyeta,Madhya Pradesh,Indore
+C-207,Megha,Rajasthan,Udaipur
+C-339,Divyeshkumar,Uttar Pradesh,Allahabad
+C-340,Bhosale,Punjab,Amritsar
+C-341,Dashyam,Gujarat,Surat
+C-342,Mrinal,Maharashtra,Mumbai
+C-343,Apoorv,Rajasthan,Udaipur
+C-128,Pooja,Uttar Pradesh,Allahabad
+C-344,Masurkar,Punjab,Amritsar
+C-345,Saptadeep,Gujarat,Surat
+C-346,Sumeet,Maharashtra,Mumbai
+C-347,Shatayu,Madhya Pradesh,Indore
+C-348,Brijesh,Rajasthan,Udaipur
+C-349,Vedant,Uttar Pradesh,Allahabad
+C-301,Rohan,Punjab,Amritsar
+C-269,Abhishek,Gujarat,Surat
+C-350,Divyansha,Maharashtra,Mumbai
+C-204,Shivani,Madhya Pradesh,Indore
+C-263,Aditi,Rajasthan,Udaipur
+C-351,Aashna,Uttar Pradesh,Allahabad
+C-352,Monu,Punjab,Amritsar
+C-353,Sathya,Gujarat,Surat
+C-237,Aman,Maharashtra,Mumbai
+C-301,Rohan,Madhya Pradesh,Indore
+C-269,Abhishek,Rajasthan,Udaipur
+C-354,Aishwarya,Uttar Pradesh,Allahabad
+C-326,Anand,Punjab,Amritsar
+C-355,Suraj,Gujarat,Surat
+C-356,Ishpreet,Maharashtra,Mumbai
+C-357,Amlan,Madhya Pradesh,Indore
+C-294,Swapnil,Delhi,Delhi
+C-358,Bhargav,Madhya Pradesh,Delhi
+C-359,Abhijit,Delhi,Delhi
+C-360,Jaydeep,Madhya Pradesh,Bhopal
+C-361,Pradeep,Delhi,Delhi
+C-362,Sujay,Madhya Pradesh,Delhi
+C-363,Jay,Delhi,Delhi
+C-364,Phalguni,Madhya Pradesh,Bhopal
+C-365,Preksha,Delhi,Delhi
+C-366,Geetanjali,Madhya Pradesh,Delhi
+C-367,Kajal,Delhi,Delhi
+C-368,Sukruta,Punjab,Amritsar
+C-369,Utkarsh,Gujarat,Surat
+C-134,Sanjay,Maharashtra,Mumbai
+C-370,Karandeep,Madhya Pradesh,Indore
+C-371,Neha,Rajasthan,Udaipur
+C-372,Jayanti,Uttar Pradesh,Allahabad
+C-373,Sandra,Punjab,Amritsar
+C-374,Akshata,Gujarat,Surat
+C-375,Vishakha,Maharashtra,Mumbai
+C-376,Prajakta,Karnataka,Bangalore
+C-160,Shruti,Maharashtra,Mumbai
+C-377,Dipali,Madhya Pradesh,Indore
+C-175,Shreya,Uttar Pradesh,Lucknow
+C-378,Smriti,Bihar,Patna
+C-379,Girase,Kerala ,Thiruvananthapuram
+C-380,Monica,Punjab,Chandigarh
+C-381,Sidharth,Maharashtra,Mumbai
+C-382,Bhutekar,Madhya Pradesh,Indore
+C-383,Shikhar,Maharashtra,Mumbai
+C-384,Rahul,Madhya Pradesh,Indore
+C-385,Sudhir,Nagaland,Kohima
+C-386,Nikhil,Punjab,Chandigarh
+C-285,Ankit,Haryana,Chandigarh
+C-383,Shikhar,Himachal Pradesh,Simla
+C-387,Vineet,Sikkim,Gangtok
+C-388,Vivek,Goa,Goa
+C-389,Jaideep,Nagaland,Kohima
+C-298,Ankur,Andhra Pradesh,Hyderabad
+C-390,Shardul,Gujarat,Ahmedabad
+C-391,Syed,Maharashtra,Pune
+C-392,Mhatre,Madhya Pradesh,Indore
+C-337,Saurabh,Andhra Pradesh,Hyderabad
+C-393,Chetan,Gujarat,Ahmedabad
+C-394,Mukund,Maharashtra,Pune
+C-395,Shantanu,Maharashtra,Mumbai
+C-160,Shruti,Madhya Pradesh,Indore
+C-396,Jesal,West Bengal,Kolkata
+C-156,Priyanka,Madhya Pradesh,Indore
+C-182,Krutika,Andhra Pradesh,Hyderabad
+C-397,Trupti,Gujarat,Ahmedabad
+C-250,Soumya,Maharashtra,Pune
+C-175,Shreya,Maharashtra,Mumbai
+C-174,Mahima,Madhya Pradesh,Indore
+C-398,Aparajita,West Bengal,Kolkata
+C-399,Muskan,Madhya Pradesh,Indore
+C-175,Shreya,Andhra Pradesh,Hyderabad
+C-257,Surbhi,Gujarat,Ahmedabad
+C-400,Tejeswini,Maharashtra,Pune
+C-401,Pratiksha,Maharashtra,Mumbai
+C-402,Oshin,Madhya Pradesh,Indore
+C-403,Saloni,West Bengal,Kolkata
+C-250,Soumya,Rajasthan,Udaipur
+C-333,Komal,Uttar Pradesh,Allahabad
+C-404,Paromita,Punjab,Amritsar
+C-405,Shreyshi,Gujarat,Surat
+C-168,Rhea,Maharashtra,Mumbai
+C-171,Mitali,Madhya Pradesh,Indore
+C-406,Jesslyn,Rajasthan,Udaipur
+C-407,Seema,Uttar Pradesh,Allahabad
+C-408,Manisha,Rajasthan,Udaipur
+C-156,Priyanka,Uttar Pradesh,Allahabad
+C-409,Piyam,Punjab,Amritsar
+C-180,Aayushi,Gujarat,Surat
+C-410,Parin,Maharashtra,Mumbai
+C-202,Shweta,Rajasthan,Udaipur
+C-411,Amruta,Delhi,Delhi
+C-412,Hemangi,Delhi,Delhi
+C-413,Atul,Delhi,Delhi
+C-414,Ginny,Madhya Pradesh,Indore
+C-415,Manjiri,Delhi,Delhi
+C-416,Nirja,Delhi,Delhi
+C-167,Anjali,Delhi,Delhi
+C-417,Mugdha,Delhi,Delhi
+C-418,Mansi,Madhya Pradesh,Indore
+C-324,Gaurav,Rajasthan,Udaipur
+C-419,Harshal,Delhi,Delhi
+C-420,Omkar,Delhi,Delhi
+C-421,Yohann,Delhi,Delhi
+C-422,Prashant,Delhi,Delhi
+C-110,Yogesh,Madhya Pradesh,Indore
+C-423,Anmol,Rajasthan,Udaipur
+C-424,Diwakar,Delhi,Delhi
+C-231,Shubham,Delhi,Delhi
+C-425,Patil,Delhi,Delhi
+C-241,Harsh,Delhi,Delhi
+C-426,Hitesh,Madhya Pradesh,Bhopal
+C-427,Nandita,Rajasthan,Jaipur
+C-428,Parnavi,West Bengal,Kolkata
+C-429,Arpita,Karnataka,Bangalore
+C-231,Shubham,Jammu and Kashmir,Kashmir
+C-430,Kalyani,Tamil Nadu,Chennai
+C-333,Komal,Uttar Pradesh,Lucknow
+C-431,Kartikay,Bihar,Patna
+C-432,Ankita,Maharashtra,Mumbai
