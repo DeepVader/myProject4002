@@ -1,4 +1,4 @@
-Category ID,Category
-CAT-01,Furniture
-CAT-02,Clothing
-CAT-03,Electronics
+Category_ID,Category_Name
+1,Furniture
+2,Clothing
+3,Electronics
