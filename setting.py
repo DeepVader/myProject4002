@@ -28,8 +28,8 @@ def create_tables(conn):
 
 def import_csv_to_db(conn, table_name, csv_file):
     df = pd.read_csv(csv_file)
-    columns = ', '.join(df.columns)
-    placeholders = ', '.join(['%s'] * len(df.columns))
+    columns = ", ".join(df.columns)
+    placeholders = ", ".join(["%s"] * len(df.columns))
     insert_query = f"""
         INSERT INTO {table_name} ({columns})
         VALUES ({placeholders})
@@ -52,7 +52,7 @@ if __name__ == "__main__":
         ("SubCategories", "subcategories_df.csv"),
         ("Orders", "orders_table.csv"),
         ("OrderDetails", "order_details_table.csv"),
-        ("SalesTargets", "sales_targets_table.csv"),
+        # ("SalesTargets", "sales_targets_table.csv"),
     ]
     folder_path = "./datatrans/"
 
