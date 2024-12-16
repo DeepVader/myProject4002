@@ -166,4 +166,4 @@ datasorce/
 config.py
 csv_to_dataset.ipynb
 
-main.ipynb
+temp/
