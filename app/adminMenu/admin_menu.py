@@ -3,6 +3,7 @@ adminMenu_listMenu = {
     "1": "Customer Details: ข้อมูลลูกค้า",
     "2": "Customer Purchase History: ประวัติการซื้อของลูกค้า",
     "3": "Monthly Sales Reports",
+    "4": "Manage Items",
     "e": "Exit",
 }
 
@@ -14,27 +15,36 @@ def adminMenu_display():
         show_menu(adminMenu_listMenu)
         print("=" * 50)
         choice = input("Please select a menu: ")
-        print("=" * 50)
+        print()
 
         if choice == "1":
             # dayOfWeek()
             print("Menu: Customer Details")
             # break
+
         elif choice == "2":
             # weekly()
             print("Menu: Customer Purchase History")
             # break
+
         elif choice == "3":
             from msr.msr_menu import MSR_display
 
             MSR_display()
             break
+
+        elif choice == "4":
+            from crud.category_menu import manage_categories
+
+            manage_categories()
+            break
+
         elif choice == "e":
             print()
-            # print("End of program ...")
             print("End of program".center(50, " "))
             print("=" * 50)
             break
+
         else:
             print("Please try again.")
             print()

@@ -1,21 +1,37 @@
-import pandas as pd
+import mysql.connector
 
 
-def pd_readSQL_fromDB(query):
-    from db.conn import create_connection, close_connection
+def fetch_data_from_db(query):
+    from db.conn import create_connection
 
-    conn = create_connection()
-    df = pd.read_sql(query, conn)
-    close_connection(conn)
-    return df
+    try:
+        with create_connection() as conn:
+            with conn.cursor() as cursor:
+                cursor.execute(query)
+                rows = cursor.fetchall()
+                if rows:
+                    columns = [column[0] for column in cursor.description]
+                    return rows, columns
+                else:
+                    return [], []
+    except mysql.connector.Error as err:
+        print(f"Error: {err}")
+        return None, None
 
 
-def get_maxWeek_fromDB():
-    from db.conn import create_connection, close_connection
+def get_max_week():
+    from db.conn import create_connection
 
-    conn = create_connection()
-    cursor = conn.cursor()
-    cursor.execute("SELECT MAX(WEEK(Order_Date)) FROM Orders;")
-    max_weeks = cursor.fetchone()[0]
-    close_connection(conn)
-    return max_weeks
+    query = "SELECT MAX(WEEK(Order_Date)) FROM Orders;"
+    try:
+        with create_connection() as conn:
+            cursor = conn.cursor()
+            cursor.execute(query)
+            result = cursor.fetchone()
+            if result is not None:
+                return result[0]
+            else:
+                return None
+    except mysql.connector.Error as err:
+        print(f"Error: {err}")
+        return None

@@ -1,15 +1,13 @@
 import matplotlib.pyplot as plt
+import pandas as pd
 
 
-from db.get import get_maxWeek_fromDB
+from db.get import get_max_week
 
-max_weeks = get_maxWeek_fromDB()
-
-
+max_weeks = get_max_week()
 query = "SELECT Categories.Category_Name"
 for week in range(1, max_weeks + 1):
     query += f", SUM(CASE WHEN WEEK(Orders.Order_Date) = {week} THEN OrderDetails.Amount ELSE 0 END) AS Week_{week}"
-
 query += """
 FROM ecommerce.OrderDetails
 JOIN ecommerce.Orders ON OrderDetails.Order_ID = Orders.Order_ID
@@ -20,11 +18,20 @@ ORDER BY Categories.Category_Name;
 """
 
 
-def plot_bar_chart():
-    from db.get import pd_readSQL_fromDB
+def plot_weekly_sales():
+    from db.get import fetch_data_from_db
 
-    df = pd_readSQL_fromDB(query)
+    rows, columns = fetch_data_from_db(query)
+
+    if rows is None or columns is None:
+        print("No data available.")
+        return
+
+    df = pd.DataFrame(rows, columns=columns)
+
     df.set_index("Category_Name", inplace=True)
+    df = df.apply(pd.to_numeric)
+
     df_transposed = df.T
 
     df_transposed.plot(kind="bar", stacked=True, figsize=(10, 6))
@@ -40,5 +47,7 @@ def plot_bar_chart():
         fontsize=10,
         title_fontsize=12,
     )
+
+    plt.tight_layout()
 
     plt.show()

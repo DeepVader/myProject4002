@@ -1,16 +1,16 @@
 def show_menu(menu):
-    # ถ้ามี "header" ให้แสดง header ก่อน
+    # Display the header if it exists
     if "header" in menu:
-        print(menu["header"].center(50, " "))
+        print(menu["header"].center(50, " "))  # Center the header with padding
         print("=" * 50)
 
-    # แสดงเมนูตัวเลือกที่ไม่ใช่ "header" และ "e"
+    # Display menu options, excluding "header" and "e"
     for key in sorted(menu.keys()):
-        if key != "header" and key != "e":
-            print(f"{key}. {menu[key]}")
+        if key not in ["header", "e"]:
+            print(f"{key}. {menu[key]}")  # Print menu options
 
-    # แสดง "e" ที่ด้านล่างสุด (ถ้ามี)
+    # Display the "e" option if it exists
     if "e" in menu:
-        print()
-        print(f"e. {menu['e']}")
-    print()
+        print()  # Add space before "e" option
+        print(f"e. {menu['e']}")  # Print the "e" option to exit
+    print()  # Final newline for clarity

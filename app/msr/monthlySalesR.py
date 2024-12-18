@@ -1,4 +1,5 @@
 from prettytable import PrettyTable
+import pandas as pd
 
 
 query = """SELECT SubCategories.SubCategory_Name,
@@ -22,27 +23,36 @@ ORDER BY SubCategories.SubCategory_Name;
 """
 
 
-def display_paginated_table():
-    from db.get import pd_readSQL_fromDB
+def display_sales_table():
+    from db.get import fetch_data_from_db
 
-    df = pd_readSQL_fromDB(query)
+    rows, columns = fetch_data_from_db(query)
+
+    if rows is None or columns is None:
+        print("No data available.")
+        return
+
+    df = pd.DataFrame(rows, columns=columns)
     df.set_index("SubCategory_Name", inplace=True)
+    df = df.apply(pd.to_numeric)
+
     df_transposed = df.T
 
     table = PrettyTable()
     table.field_names = ["Month"] + df_transposed.columns.tolist()
 
+    highlight_months = [
+        "January",
+        "March",
+        "August",
+        "September",
+        "October",
+        "November",
+    ]
     for row in df_transposed.itertuples():
         row_data = list(row)
-        if row_data[0] in [
-            "January",
-            "March",
-            "August",
-            "September",
-            "October",
-            "November",
-        ]:
-            row_data[0] = f"**{row_data[0]}**"
+        if row_data[0] in highlight_months:
+            row_data[0] = f"***{row_data[0]}***"
         table.add_row(row_data)
 
     print(table)

@@ -1,15 +1,12 @@
 from prettytable import PrettyTable
+import pandas as pd
 
+from db.get import get_max_week
 
-from db.get import get_maxWeek_fromDB
-
-max_weeks = get_maxWeek_fromDB()
-
-
+max_weeks = get_max_week()
 query = "SELECT SubCategories.SubCategory_Name"
 for week in range(1, max_weeks + 1):
     query += f", SUM(CASE WHEN WEEK(Orders.Order_Date) = {week} THEN OrderDetails.Amount ELSE 0 END) AS Week_{week}"
-
 query += """
 FROM ecommerce.OrderDetails
 JOIN ecommerce.Orders ON OrderDetails.Order_ID = Orders.Order_ID
@@ -20,16 +17,27 @@ ORDER BY SubCategories.SubCategory_Name;
 
 
 def display_paginated_table():
-    from db.get import pd_readSQL_fromDB
+    from db.get import fetch_data_from_db
 
-    df = pd_readSQL_fromDB(query)
+    rows, columns = fetch_data_from_db(query)
+
+    if rows is None or columns is None:
+        print("No data available.")
+        return
+
+    df = pd.DataFrame(rows, columns=columns)
+
     df.set_index("SubCategory_Name", inplace=True)
+    df = df.apply(pd.to_numeric)
+
     df_transposed = df.T
 
     rows_per_page = 10
+
     total_pages = (len(df_transposed) // rows_per_page) + (
         1 if len(df_transposed) % rows_per_page != 0 else 0
     )
+
     current_page = 1
 
     while True:
@@ -48,13 +56,12 @@ def display_paginated_table():
         print("\n" + "-" * 50)
         print("\nOptions: [N]ext, [P]revious, [Q]uit")
 
-        user_input = input("Enter your choice: ").strip().lower()
-
-        if user_input == "n" and current_page < total_pages:
+        choice = input("Enter your choice: ").strip().lower()
+        if choice == "n" and current_page < total_pages:
             current_page += 1
-        elif user_input == "p" and current_page > 1:
+        elif choice == "p" and current_page > 1:
             current_page -= 1
-        elif user_input == "q":
+        elif choice == "q":
             from msr.msr_menu import MSR_display
 
             MSR_display()
