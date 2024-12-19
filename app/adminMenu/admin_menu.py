@@ -4,6 +4,7 @@ adminMenu_listMenu = {
     "2": "Customer Purchase History: ประวัติการซื้อของลูกค้า",
     "3": "Monthly Sales Reports",
     "4": "Manage Items",
+    "5": "Backup",
     "e": "Exit",
 }
 
@@ -37,6 +38,12 @@ def adminMenu_display():
             from crud.category_menu import manage_categories
 
             manage_categories()
+            break
+
+        elif choice == "5":
+            from backup.backup import backup_db
+
+            backup_db()
             break
 
         elif choice == "e":
