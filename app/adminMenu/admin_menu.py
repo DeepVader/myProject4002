@@ -1,7 +1,7 @@
 adminMenu_listMenu = {
     "header": "Menu: E-Commerce Data Analytics",
-    "1": "Customer Details: ข้อมูลลูกค้า",
-    "2": "Customer Purchase History: ประวัติการซื้อของลูกค้า",
+    "1": "Customer Details",
+    "2": "Purchase History",
     "3": "Monthly Sales Reports",
     "4": "Manage Items",
     "5": "Backup",
@@ -19,14 +19,16 @@ def adminMenu_display():
         print()
 
         if choice == "1":
-            # dayOfWeek()
-            print("Menu: Customer Details")
-            # break
+            from Demo_CS.Demo_CS import Customer_detail
+
+            Customer_detail()
+            break
 
         elif choice == "2":
-            # weekly()
-            print("Menu: Customer Purchase History")
-            # break
+            from purchase_history.ph_menu import ph_display
+
+            ph_display()
+            break
 
         elif choice == "3":
             from msr.msr_menu import MSR_display
@@ -47,7 +49,6 @@ def adminMenu_display():
             break
 
         elif choice == "e":
-            print()
             print("End of program".center(50, " "))
             print("=" * 50)
             break

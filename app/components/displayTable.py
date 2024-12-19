@@ -25,3 +25,13 @@ def display_table_catID(rows, columns, txt=None):
         else:
             pass
         print(table)
+
+
+def display_table(columns, data, title=None):
+    table = PrettyTable()
+    table.field_names = columns
+    for row in data:
+        table.add_row(row)
+    if title:
+        print(f"\n===== {title} =====")
+    print(table)

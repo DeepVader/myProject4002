@@ -35,3 +35,15 @@ def get_max_week():
     except mysql.connector.Error as err:
         print(f"Error: {err}")
         return None
+
+
+def fetch_data(query, params=None):
+    from db.conn import create_connection
+
+    db = create_connection()
+    cursor = db.cursor()
+    cursor.execute(query, params)
+    data = cursor.fetchall()
+    cursor.close()
+    db.close()
+    return data

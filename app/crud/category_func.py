@@ -2,7 +2,7 @@ def read_all_categories():
     from db.crud_category import read_all_cat_from_db
 
     rows, columns = read_all_cat_from_db()
-    from components.crud_display import display_table_catID
+    from components.displayTable import display_table_catID
 
     display_table_catID(rows, columns)
 
@@ -17,7 +17,7 @@ def create_category():
 
     val = (name,)
     rows, columns = create_one_cat_from_db(val)
-    from components.crud_display import display_table_catID
+    from components.displayTable import display_table_catID
 
     txt = "New Category"
     display_table_catID(rows, columns, txt)
@@ -41,7 +41,7 @@ def edit_category():
         id,
     )
     rows, columns = edit_one_cat_from_db(val)
-    from components.crud_display import display_table_catID
+    from components.displayTable import display_table_catID
 
     txt = "Category Name Updated"
     display_table_catID(rows, columns, txt)
@@ -68,7 +68,7 @@ def delete_category():
 
             val = (id,)
             rows, columns = delete_one_cat_from_db(val)
-            from components.crud_display import display_table_catID
+            from components.displayTable import display_table_catID
 
             txt = f"Category ID:{id} Deleted"
             display_table_catID(rows, columns, txt)

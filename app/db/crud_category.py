@@ -81,17 +81,26 @@ def edit_one_cat_from_db(val):
 def delete_one_cat_from_db(val):
     from db.conn import create_connection
 
-    query = "DELETE FROM Categories WHERE Category_ID = %s"
+    check_query = "SELECT COUNT(*) FROM SubCategories WHERE Category_ID = %s"
+    delete_query = "DELETE FROM Categories WHERE Category_ID = %s"
     try:
         with create_connection() as conn:
             with conn.cursor() as cursor:
-                cursor.execute(query, val)
-                conn.commit()
-                if cursor.rowcount > 0:
-                    from db.crud_category import read_all_cat_from_db
+                cursor.execute(check_query, val)
+                count = cursor.fetchone()[0]
+                if count > 0:
+                    return None, None
 
-                    return read_all_cat_from_db()
-                return None, None
+                else:
+                    cursor.execute(delete_query, val)
+                    conn.commit()
+                    if cursor.rowcount > 0:
+                        from db.crud_category import read_all_cat_from_db
+
+                        return read_all_cat_from_db()
+
+                    else:
+                        return None, None
     except mysql.connector.Error as err:
         # print(f"Error: {err}")
         return None, None
