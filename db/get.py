@@ -15,7 +15,7 @@ def fetch_data_from_db(query):
                 else:
                     return [], []
     except mysql.connector.Error as err:
-        print(f"Error: {err}")
+        # print(f"Error: {err}")
         return None, None
 
 
@@ -33,7 +33,7 @@ def get_max_week():
             else:
                 return None
     except mysql.connector.Error as err:
-        print(f"Error: {err}")
+        # print(f"Error: {err}")
         return None
 
 

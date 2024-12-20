@@ -1,8 +1,9 @@
 import mysql.connector
-from config import DB_CONFIG
 
 
 def create_connection(*, use_database=True):
+    from db.config import DB_CONFIG
+
     try:
         if use_database:
             conn = mysql.connector.connect(
@@ -17,18 +18,18 @@ def create_connection(*, use_database=True):
                 user=DB_CONFIG["user"],
                 password=DB_CONFIG["password"],
             )
-        print("---" * 7)
-        print("Connection successful")
-        print("---" * 7)
+        # print("---" * 7)
+        # print("Connection successful")
+        # print("---" * 7)
         return conn
     except mysql.connector.Error as err:
-        print(f"Error: {err}")
+        # print(f"Error: {err}")
         return None
 
 
 def close_connection(conn):
     if conn.is_connected():
         conn.close()
-        print("---" * 7)
-        print("Connection closed")
-        print("---" * 7)
+        # print("---" * 7)
+        # print("Connection closed")
+        # print("---" * 7)

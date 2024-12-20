@@ -163,9 +163,13 @@ cython_debug/
 
 datasorce/
 
-config.py
+db/config.py
+
 csv_to_dataset.ipynb
 
-temp/
+backup/myBackup/*
 
-app/backup/myBackup/*
+datatrans/_*
+
+Demo_CS/*.ipynb
+purchase_history/*.ipynb

@@ -1,8 +1,8 @@
 import mysql.connector
 import os
 import pandas as pd
-from config import DB_NAME, TABLES
-from conn import create_connection, close_connection
+from db.config import DB_NAME, TABLES
+from db.conn import create_connection, close_connection
 
 
 def create_database(conn):
