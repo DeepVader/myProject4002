@@ -67,6 +67,14 @@ In the **Manage Items** menu, you can manage product categories with the followi
 
 This option allows you to backup the database to prevent data loss. It is recommended to perform regular backups to ensure data safety.
 
-##
+## Authors
+
+This project was developed by:
+
+- [Latte ☕]
+- [Pizza 🍕]
+- [aom.elet 🥚]
+
+---
 
 This system helps you analyze customer behavior, track sales performance, and manage product categories effectively.
